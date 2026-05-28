@@ -803,15 +803,13 @@ body::after{
 
     }
 
-    .content .right .image {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        border: 6px solid var(--color-black);
+.profile img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:auto;
     }
 
     .name {
