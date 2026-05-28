@@ -14,22 +14,17 @@
     --color-heart: #FF7882;
     --color-bg-letter: #fff8e4;
     --color-border: #DACCBF;
-}
-html{
-    height: 100%;
-body{
+html, body{
+    width:100%;
+    overflow-x:hidden;
     margin:0;
     padding:0;
-    overflow-x:hidden;
 }
-    .container{
+
+.container{
     width:100%;
-    max-width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    }
+    max-width:100vw;
+    overflow:hidden;
 
     background: linear-gradient(
         135deg,
@@ -296,16 +291,19 @@ body::after{
     }
 }
 .profile img{
-    width:160px;
-    height:160px;
+    width:180px;
+    height:180px;
     border-radius:50%;
     object-fit:cover;
     display:block;
     margin:auto;
 }
 
-img{
+/* prevents elements from becoming wider than screen */
+*{
+    box-sizing:border-box;
     max-width:100%;
+}
 }
 
 }
@@ -838,15 +836,7 @@ img{
         width: 76px !important;
     }
 
-
 }
-
-
-
-
-
-
-
 .boxMail{
     position: fixed;
     background: rgb(0, 0, 0, 0.8);
